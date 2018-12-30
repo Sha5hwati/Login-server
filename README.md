@@ -1,4 +1,4 @@
-# csc461_semester_project
+# Login Server 
 <dl>
    <dt><b>Language Version</b></dt>
    <dd>Go 1.11</dd>
