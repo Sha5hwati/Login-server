@@ -9,7 +9,7 @@
       at that time and logout.</dd>
    <dt><b>Aim</b></dt>
    <dd>The aim of this project was to study and learn a new language on our own (Go Language),
-      learn about how server-client architecture and get practice in front-end
+      learn about how server-client architecture and get practice in front-end.
       web development</dd>
    <dt><b>Language Version</b></dt>
    <dd>Go 1.11</dd>
