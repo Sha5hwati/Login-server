@@ -1,5 +1,6 @@
 # Login Server 
 <dl>
+   <dt><b> SDSMT CSC 461 <b></dt>
    <dt><b>Language Version</b></dt>
    <dd>Go 1.11</dd>
    <dt><b>OS</b></dt>
