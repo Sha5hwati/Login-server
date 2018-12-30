@@ -14,4 +14,6 @@
    <li>Run <i>chatbot.go</i></li>
    <li>Open a web browser and go to http://localhost:8080/ </li>
    </dd>
+   <dt><b>Documentation</b></dt>
+   <dd>https://github.com/Shash0405/Login-server/wiki</dd>
 </dl>
