@@ -11,7 +11,11 @@
    <ol>
    <li>Create a "chatbot" directory in the src directory of the GOPATH</li>
    <li>Move the files from the repository in the chatbot directory</li>
-   <li>run chatbot.go</li>
-   <li>open a web browser and go to http://localhost:8080/</li>
+   <li>Run 
+            ```
+            chatbot.go
+            ```
+      </li>
+   <li>Open a web browser and go to  http://localhost:8080/ </li>
    </dd>
 </dl>
