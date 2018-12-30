@@ -1,0 +1,52 @@
+
+body {
+    background-color: lightblue;
+}
+
+#title {
+    text-decoration-color: black;
+    text-align: center;
+    font-size: xx-large;
+}
+
+#text {
+    text-decoration-color: black;
+    text-align: center;
+    font-size: xx-large;
+}
+
+#text1 {
+    text-decoration-color: black;
+    text-align: center;
+    font-size: x-large;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+}
+
+#div{
+    margin-top: 50px;
+}
+
+#logoutButton{
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration-style: solid;
+}
+
+table {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    table-layout: fixed;
+}

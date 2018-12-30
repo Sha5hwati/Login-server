@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+<meta charset="UTF-8">
+<title>GO Login Server</title>
+
+<head>
+	<h1 id = "title"> GO Login Server </h1>
+	<link rel="stylesheet" href="../static/loginStyle.css">
+</head>
+
+<body>
+
+<p>
+<form id = "loginForm" action="/login" method="post">
+	<b>Username:</b> <input type="text" name="username">
+	<b>Password:</b> <input type="password" name="password">
+	<br><input type="submit" id = "loginButton" value="Login">
+</form>
+<br/>
+</p>
+
+<p id = "newUser">
+	New user?<br/>
+<form id = "newUserForm" action="/newUser" method="post">
+	<b>Username: </b><input type="text" name="username"><br><br>
+	<b style="margin-right: 28px">Email: </b><input type="text" name = "email"><br><br>
+	<b style="margin-left: 7px">Password: </b><input type="password" name="password">
+	<br><input type="submit" id="newUserButton" value="Join">
+</form>
+</p>
+
+</body>
+</html>

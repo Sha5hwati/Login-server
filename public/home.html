@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>On the server</title>
+        <h1 id="title">Welcome </h1>
+        <link rel="stylesheet" href="../static/homeStyle.css">
+    </head>
+
+    <script>
+        function emptyTable(table){
+            var tablesize= table.rows.length;
+            for(var i = 1 ; i < tablesize; i++){
+                table.deleteRow(1);
+
+            }
+        }
+
+        function myfunc()
+        {
+            var request = new XMLHttpRequest;
+            var requeststring ="/getuser";
+            request.onreadystatechange = function(){
+                if(this.readyState ==4){
+                    switch(this.status){
+                        case 200: {
+                            users = JSON.parse(this.responseText);
+                            emptyTable(document.getElementById("Table"));
+                            for (x in users) {
+                                ViewUsers(users[x]);
+                            }
+                        } break;
+                        case 409: {
+                            alert("Request failed!");
+                        } break;
+                        case 401:{
+                            alert("Unauthorized access");
+                        }break;
+                        default: {
+                            alert("Something went wrong!");
+                        } break;
+                    }
+                }
+            }
+            request.open("POST", requeststring, true);
+            request.send();
+        }
+
+        function ViewUsers(obj){
+            var table = document.getElementById("Table");
+            var row = table.insertRow(table.rows.length);
+            var cell0 =row.insertCell(0);
+            var cell1 = row.insertCell(1);
+            cell1.innerHTML= obj['Email'];
+            cell0.innerHTML = obj['Name'];
+        }
+
+        window.onload = function () {
+            var request = new XMLHttpRequest;
+            var requeststring ="/getUserName";
+            request.onreadystatechange = function(){
+                if(this.readyState ==4){
+                    switch(this.status){
+                        case 200: {
+                            users = JSON.parse(this.responseText);
+                           document.getElementById("title").innerHTML +=" " + users + "!";
+                           console.log(this.responseText)
+                        } break;
+                        case 409: {
+                            alert("Request failed!");
+                        } break;
+                        case 401:{
+                            alert("Unauthorized access");
+                        }break;
+                        default: {
+                            alert("Something went wrong!");
+                        } break;
+                    }
+                }
+            }
+            request.open("POST", requeststring, true);
+            request.send();
+        }
+
+    </script>
+
+    <body>
+    <p id = "text">You are on the server</p>
+
+    <p id="text1"> Users online right now </p>
+
+    <div id = "List" class="class">
+    <table id="Table" border='1'>
+        <tr>
+            <td><b>Username</b></td>
+            <td><b>Email</b></td>
+        </tr>
+    </table>
+    </div>
+
+    <div class="wrapper" id="div" >
+    <br><br><button id ="getusers"  style="height:30px;width:220px" onclick= "myfunc()">Get All Online Users</button>
+    </div>
+
+    <form id = "logoutButton" action="/logout" method="post" >
+        <input type="submit" id = "logoutButton" value="Logout">
+    </form>
+
+    </body>
+</html>

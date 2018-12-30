@@ -1,0 +1,46 @@
+
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    text-decoration-color: black;
+    text-align: center;
+    font-size: xx-large;
+}
+
+#loginForm{
+    margin-top: 100px;
+    text-align: center;
+    font-size: large;
+    text-decoration-style: solid;
+}
+
+#loginButton{
+    margin-top: 20px;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+}
+
+#newUser{
+    margin-top: 40px;
+    text-decoration-color: black;
+    text-align: center;
+    font-size: x-large;
+}
+
+#newUserForm{
+    margin-top: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: large;
+    text-decoration-style: solid;
+}
+
+#newUserButton{
+    margin-top: 20px;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+}
