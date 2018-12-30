@@ -1,7 +1,15 @@
 # Login Server 
 
-SDSMT CSC 461
 <dl>
+   <dt><b>Team members</b></dt>
+   <dd>Shashwati Shradha, Manasi Paste, Garfield Tong</dd>
+   <dt><b>Pitch</b></dt>
+   <dd>For our semester project for CSC-461 we pitched to make a real-time Login Server on which 
+      users can create accounts, login, see other active users who are present 
+      at that time and logout.</dd>
+   <dd>The aim of this project was to study and learn a new language on our own,
+      learn about how server-client architecture and get practice in front-end
+      web development</dd>
    <dt><b>Language Version</b></dt>
    <dd>Go 1.11</dd>
    <dt><b>OS</b></dt>
