@@ -25,5 +25,5 @@
    <li>Open a web browser and go to http://localhost:8080/ </li>
    </dd>
    <dt><b>Documentation</b></dt> 
-   <dd>[Click here](https://github.com/Shash0405/Login-server/wiki)</dd>
+   <dd>https://github.com/Shash0405/Login-server/wiki</dd>
 </dl>
