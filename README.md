@@ -6,7 +6,8 @@
    <dt><b>Pitch</b></dt>
    <dd>For our semester project for CSC-461 we decided to make a real-time Login Server on which 
       users can create accounts, login, see other active users who are present 
-      at that time and logout.</dd>
+      at that time and logout.
+      <img src="https://github.com/Shash0405/Login-server/blob/master/screenshots/home%20screen.PNG" style="height: 150px; width = 100px; align="center"/>
    <dt><b>Aim</b></dt>
    <dd>The aim of this project was to study and learn a new language on our own (Go Language),
       learn about how server-client architecture and get practice in front-end web development.</dd>
@@ -27,3 +28,4 @@
    <dt><b>Documentation</b></dt> 
    <dd>https://github.com/Shash0405/Login-server/wiki</dd>
 </dl>
+ 
